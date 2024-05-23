@@ -1,109 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body class="bg-gray-100">
-    <div class="conatiner">
-      <div class="row min-h-screen grid grid-cols-1">
-        <div class="content bg-white-300 md:m-8 2xl:px-96">
-          <header
-            class=" p-4 md:p-8 bg-white grid grid-cols-6"
-          >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="bg-gray-100">
+  <div class="conatiner">
+    <div class="row min-h-screen grid grid-cols-1">
+      <div class="content bg-white-300 md:m-8 2xl:px-96">
+        <header class="p-4 md:p-8 bg-white grid grid-cols-6">
+          <div class="outercircle border-4 border-gray-600 flex items-center h-36 w-36 justify-center rounded-full">
+            <div class="innercircle border-4 border-blue-400 h-32 w-32 flex items-center justify-center rounded-full">
+              <img src="./resorses/user.png" alt="" height="100px" width="100px" />
+            </div>
+          </div>
+          <div class="about col-start-2 col-span-7">
+            <h1 class="font-medium text-gray-800 text-3xl subpixel-antialiased">
+              Richard Smith
+            </h1>
+            <p class="text-xl text-gray-500">Business Analyst</p>
+            <p class="col-start-2 col-span-7 text-sm">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+              qui nesciunt at dolor suscipit perferendis possimus vitae
+              inventore in eaque quasi totam dicta porro itaque, ipsum iure?
+              Libero, quibusdam deserunt Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Laboriosam magnam ipsum placeat
+              cupiditate dolor alias facilis numquam, deserunt dicta laborum,
+              laudantium tenetur aliquid dolores nemo quas ut quo ratione
+              facere.
+            </p>
+          </div>
+        </header>
+        <div class="min-h-full grid grid-row-10">
+          <div class="bg-white px-10 py-4">
             <div
-              class="outercircle border-4 border-gray-600 flex items-center h-36 w-36 justify-center rounded-full"
-            >
-              <div
-                class="innercircle border-4 border-blue-400 h-32 w-32 flex items-center justify-center rounded-full"
-              >
-                <img
-                  src="./resorses/user.png"
-                  alt=""
-                  height="100px"
-                  width="100px"
-                />
+              class="contact min-h-full max-h-fit grid grid-cols-2 border-2 z-10 border-white-100 bg-gray-800 text-white px-8 pt-3 rounded-xl">
+              <div class="grid grid-rows-3 bg-custom-dark">
+                <div class="flex items-baseline gap-2">
+                  <i class="fa-regular fa-envelope"></i>
+                  <p>Email</p>
+                </div>
+                <div class="flex items-baseline gap-2">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Location</p>
+                </div>
+                <div class="flex items-baseline gap-2">
+                  <i class="fa-brands fa-twitter"></i>
+                  <p>Twitter</p>
+                </div>
+              </div>
+              <div class="grid grid-rows-3 gap-2">
+                <div class="flex items-baseline">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>1234567890</p>
+                </div>
+                <div class="flex items-baseline gap-2">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <p>linkedin/xyz</p>
+                </div>
+                <div class="flex items-baseline gap-2">
+                  <i class="fa-brands fa-quora"></i>
+                  <p>quora.com/xyz</p>
+                </div>
               </div>
             </div>
-            <div class="about col-start-2 col-span-7">
-              <h1
-                class="font-medium text-gray-800 text-3xl subpixel-antialiased"
-              >
-                Richard Smith
-              </h1>
-              <p class="text-xl text-gray-500">Business Analyst</p>
-              <p class="col-start-2 col-span-7 text-sm">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
-                qui nesciunt at dolor suscipit perferendis possimus vitae
-                inventore in eaque quasi totam dicta porro itaque, ipsum iure?
-                Libero, quibusdam deserunt Lorem, ipsum dolor sit amet
-                consectetur adipisicing elit. Laboriosam magnam ipsum placeat
-                cupiditate dolor alias facilis numquam, deserunt dicta laborum,
-                laudantium tenetur aliquid dolores nemo quas ut quo ratione
-                facere.
+          </div>
+          <!-- skills -->
+          <div class="px-9 row-start-2 bg-white">
+            <div class="div flex gap-4 justify-start items-center">
+              <div class="bg-gray-800 text-white p-4 rounded-full h-10 w-10 justify-center items-center flex">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <p class="font-bold text-2xl subpixel-antialiased text-gray-800">
+                SKILLS AND COMPETENCIES
               </p>
             </div>
-          </header>
-          <div class=" min-h-full grid grid-row-10">
-            <div class="bg-white px-10 py-4">
-              <div class="contact min-h-full max-h-fit grid grid-cols-2 border-2 z-10 border-white-100 bg-gray-800 text-white px-8   pt-3  rounded-xl ">
-                <div class="grid grid-rows-3  bg-custom-dark">
-                  <div class="flex items-baseline gap-2">
-                    <i class="fa-regular fa-envelope"></i>
-                    <p>Email</p>
+            <div class="content grid grid-cols-2 m-2">
+              <div class="grid grid-cols-2">
+                <div class="col1 bg-white grid grid-rows-5 col-span-2">
+                  <div class="1 bottom-2 flex items-center gap-32 m-4">
+                    <p>sgsdtegg</p>
+                    <div class="bg-black h-3 w-56"></div>
                   </div>
-                  <div class="flex items-baseline gap-2">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>Location</p>
+                  <div class="1 bottom-2 flex items-center gap-32 m-4">
+                    <p>sgsdtegg</p>
+                    <div class="bg-black h-3 w-56"></div>
                   </div>
-                  <div class="flex items-baseline gap-2">
-                    <i class="fa-brands fa-twitter"></i>
-                    <p>Twitter</p>
+                  <div class="1 bottom-2 flex items-center gap-32 m-4">
+                    <p>sgsdtegg</p>
+                    <div class="bg-black h-3 w-56"></div>
                   </div>
-                </div> 
-                <div class="grid grid-rows-3 gap-2">
-                  <div class="flex items-baseline">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>1234567890</p>
+                  <div class="1 bottom-2 flex items-center gap-32 m-4">
+                    <p>sgsdtegg</p>
+                    <div class="bg-black h-3 w-56"></div>
                   </div>
-                  <div class="flex items-baseline gap-2">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <p>linkedin/xyz</p>
+                  <div class="1 bottom-2 flex items-center gap-32 m-4">
+                    <p>sgsdtegg</p>
+                    <div class="bg-black h-3 w-56"></div>
                   </div>
-                  <div class="flex items-baseline gap-2">
-                    <i class="fa-brands fa-quora"></i>
-                    <p>quora.com/xyz</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 bg-white">
+                <div class="col1 grid grid-rows-5 gap-x-3">
+                  <div class="1 bottom-2 flex items-center gap-32 m-4">
+                    <p>sgsdtegg</p>
+                    <div class="bg-black h-3 w-56"></div>
+                  </div>
+                  <div class="1 bottom-2 flex items-center gap-32 m-4">
+                    <p>sgsdtegg</p>
+                    <div class="bg-black h-3 w-56"></div>
+                  </div>
+                  <div class="1 bottom-2 flex items-center gap-32 m-4">
+                    <p>sgsdtegg</p>
+                    <div class="bg-black h-3 w-56"></div>
+                  </div>
+                  <div class="1 bottom-2 flex items-center gap-32 m-4">
+                    <p>sgsdtegg</p>
+                    <div class="bg-black h-3 w-56"></div>
+                  </div>
+                  <div class="1 bottom-2 flex items-center gap-32 m-4">
+                    <p>sgsdtegg</p>
+                    <div class="bg-black h-3 w-56"></div>
                   </div>
                 </div>
               </div>
             </div>
-            
-            <div class="1 border-2 border-gray-600"></div>
-
-            <div class="1 border-2 border-gray-600"></div>
-            <div class="1 border-2 border-gray-600"></div>
-            <div class="1 border-2 border-gray-600"></div>
-            <div class="1 border-2 border-gray-600"></div>
-            <div class="1 border-2 border-gray-600"></div>
-            <div class="1 border-2 border-gray-600"></div>
-            <div class="1 border-2 border-gray-600"></div>
-            <div class="1 border-2 border-gray-600"></div>
           </div>
+
+          <div class="1 border-2 border-gray-600"></div>
+          <div class="1 border-2 border-gray-600"></div>
+          <div class="1 border-2 border-gray-600"></div>
+          <div class="1 border-2 border-gray-600"></div>
+          <div class="1 border-2 border-gray-600"></div>
+          <div class="1 border-2 border-gray-600"></div>
+          <div class="1 border-2 border-gray-600"></div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script
-      src="https://kit.fontawesome.com/4d8456b076.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://kit.fontawesome.com/4d8456b076.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
