@@ -1,14 +1,14 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
+// tailwind.config.js
 module.exports = {
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-        screens: { 'sm': { 'max': '360px' } },
+      colors: {
+        'custom-dark': '#0c2229',
       },
     },
-
   },
-  // ...
+  variants: {},
+  plugins: [],
 }
