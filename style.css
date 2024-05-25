@@ -2,3 +2,9 @@
   left: 649px;
   top: 219px;
 }
+@media (max-width: 360px) { 
+  .circle{
+    left: 15.6rem;
+    top: 13.8rem;
+  }
+}
