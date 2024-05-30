@@ -40,247 +40,193 @@
     }
   </style>
 </head>
+
 <body class="bg-slate-300">
   <div class=" 2xl:mx-80">
-<div class=" min-h-screen  md:mx-28 md:mt-20  bg-white">
+    <div class=" min-h-screen  md:mx-28 md:mt-20  bg-white">
       <header class=" grid grid-cols-7 relative ">
         <div class=" col-start-1 col-span-5 flex ">
           <div class="bg-gray-600 h-56  rounded-lg w-2 md:m-2 m-1"></div>
           <!-- profile -->
-          <div class="bg-green-400 md:my-2 md:me-2 min-h-fit max-h-max w-full rounded-s-md grid grid-cols-6">
-            <!-- profilepic -->
+          <section class="bg-green-400 md:my-2 md:me-2 min-h-fit max-h-max w-full rounded-s-md grid grid-cols-6 "
+            data-section="basicInfo" >
             <div class=" bg-gray-100 col-start-1 col-span-2 justify-center flex items-center ">
               <div
-                class="InnerSquare lg:h-40 lg:w-40 border-4 border-orange-500 rounded-2xl overflow-hidden shadow shadow-orange-500 mt-6 mx-1 ">
-                <img src="./Resources/user.jpg" alt="user"></div>
+                class="InnerSquare lg:h-40 lg:w-40 border-4 border-orange-500 rounded-2xl overflow-hidden shadow shadow-orange-500 mt-6 mx-1 "
+                data-input-type="image">
+                <img src="./Resources/user.jpg" alt="user">
+              </div>
             </div>
- <!-- about -->
             <div class=" bg-gray-100 col-start-3 col-span-4 flex justify-center flex-col p-2">
-              <h1 class=" text-xl 2xl:text-4xl text-gray-700 subpixel-antialiased">Aarav Patel</h1>
-              <h3 class="py-2 text-orange-500 text-base lg:text-xl">Data Analysit</h3>
-              <p class="content ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eligendi, omnis
+              <h1 class=" text-xl 2xl:text-4xl text-gray-700 subpixel-antialiased" data-field="name"
+                data-placeholder="userName">Aarav Patel</h1>
+              <h3 class="py-2 text-orange-500 text-base lg:text-xl" data-field="professionalTitle">Data Analysit</h3>
+              <p class="content " data-field="proffesionalSummary" data-input-type="textarea">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Sed eligendi, omnis
                 architecto nisi facere incidunt atque explicabo cum, quas, suscipit sit distinctio corporis labore sint
                 cupiditate esse ratione consequuntur. Non.</p>
-</div>
-</div></div>
+            </div>
+          </section>
+        </div>
         <!-- contact -->
-        <div
-          class=" bg-gray-500 col-start-6 col-span-2 md:my-2 md:me-2 rounded- grid grid-rows-4 ps-2 items-center py-3 min-h-fit  ">
+        <section
+          class=" bg-gray-500 col-start-6 col-span-2 md:my-2 md:me-2 rounded- grid grid-rows-4 ps-2 items-center py-3 min-h-fit  "
+          >
           <div class="row flex flex-col md:flex-row md:items-center gap-2">
             <div class="contact  ">
-              <!-- <div class=""></div> -->
               <i class="fa-regular fa-envelope"></i>
 
             </div>
             <div class="lg:ms-2 text-white ">
-              <h6 class="content">Sara@gmail.com</h6>
+              <h6 class="content" data-field="email">Sara@gmail.com</h6>
             </div>
           </div>
           <div class="row flex flex-col md:flex-row md:items-center gap-2">
             <div class="contact ">
-              <!-- <div class=""></div> -->
               <i class="fa-solid fa-mobile"></i>
             </div>
             <div class="lg:ms-2 text-white ">
-              <h6 class="content">1234567890</h6>
+              <h6 class="content" data-field="phone_number">1234567890</h6>
             </div>
           </div>
           <div class="row flex flex-col md:flex-row md:items-center gap-2">
             <div class="contact ">
-              <!-- <div class=""></div> -->
               <i class="fa-solid fa-location-dot"></i>
             </div>
             <div class="lg:ms-2 text-white ">
-              <h6 class="content">Pala/TVM</h6>
+              <h6 class="content" data-field="address">Pala/TVM</h6>
             </div>
           </div>
           <div class="row flex flex-col md:flex-row md:items-center gap-2">
             <div class="contact ">
-              <!-- <div class=""></div> -->
-              <i class="fa-brands fa-linkedin-in"></i></div>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
             <div class="lg:ms-2 text-white ">
-              <h6 class="content">linkdin.com/xyz</h6>
+              <h6 class="content" data-field="linkdin">linkdin.com/xyz</h6>
             </div>
-          </div>  </div>
-</header>
-      <div class="bg-white min-h-screen sm:grid lg:grid  md:grid grid-cols-7">
-        <!-- Work experience -->
-        <div class=" workexperince col-start-1 col-span-5 lg:p-4  ">
-          <div class=" min-h-fit p-2 lg:p-4 flex  items-center gap-2  text-gray-700">
-            <div class="iconbg">
-              <i class="fa-solid fa-briefcase"></i> </div>
-            <h1>WORK EXPERIENCE</h1></div>
-          <div class="content px-3 lg:px-6">
-            <h3>Data Scientist</h3>
-            <h4>Future Energy limited</h4>
-            <div class="italic text-xs  lg:text-sm flex items-center justify-between text-orange-500">
-              <p>8/2020-present</p>
-              <p>palo Atla,CA</p>
-            </div>
-            <div class="p-3">
-              <li class="text-orange-500">
-                <div class="text-black content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-                  unde rerum tempora quasi expedita quis itaque, iusto minus quisquam error eius voluptatem aperiam
-                  alias illum eveniet obcaecati vero tenetur asperiores!</div>
-              </li>
-              <li class="text-orange-500">
-                <div class="text-black content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-                  unde rerum tempora quasi expedita quis itaque, iusto minus quisquam error eius voluptatem aperiam
-                  alias illum eveniet obcaecati vero tenetur asperiores!</div>
-              </li>
-              <li class="text-orange-500">
-                <div class="text-black content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-                  unde rerum tempora quasi expedita quis itaque, iusto minus quisquam error eius voluptatem aperiam
-                  alias illum eveniet obcaecati vero tenetur asperiores!</div>
-              </li>
-              <li class="text-orange-500">
-                <div class="text-black content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-                  unde rerum tempora quasi expedita quis itaque, iusto minus quisquam error eius voluptatem aperiam
-                  alias illum eveniet obcaecati vero tenetur asperiores!</div>
-              </li>
-              <div>
+          </div>
+        </section>
+      </header>
 
+
+
+      <div class="bg-white min-h-screen sm:grid lg:grid  md:grid grid-cols-7 ">
+
+        <div class="  col-start-1 col-span-5 lg:p-4 grid-rows-2 ">
+          <!-- Work experience -->
+          <section data-section="Experience">
+            <div class=" min-h-fit p-2 lg:p-4 flex  items-center gap-2  text-gray-700">
+              <div class="iconbg">
+                <i class="fa-solid fa-briefcase"></i>
               </div>
+              <h1 data-role="header">WORK EXPERIENCE</h1>
             </div>
-          </div>
-          <div class="content px-3 lg:px-6">
-            <h3>Data Scientist</h3>
-
-            <h4>Future Energy limited</h4>
-            <div class="italic text-xs  lg:text-sm flex items-center justify-between text-orange-500">
-              <p>8/2020-present</p>
-              <p>palo Atla,CA</p>
-            </div>
-            <div class="p-3">
-              <li class="text-orange-500">
-                <div class="text-black content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-                  unde rerum tempora quasi expedita quis itaque, iusto minus quisquam error eius voluptatem aperiam
-                  alias illum eveniet obcaecati vero tenetur asperiores!</div>
-              </li>
-              <li class="text-orange-500">
-                <div class="text-black content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-                  unde rerum tempora quasi expedita quis itaque, iusto minus quisquam error eius voluptatem aperiam
-                  alias illum eveniet obcaecati vero tenetur asperiores!</div>
-              </li>
-              <div>
-
+            <div class="content px-3 lg:px-6" data-role="content">
+              <h3 data-field="title">Data Scientist</h3>
+              <h4 data-field="componey_name">Future Energy limited</h4>
+              <div class="italic text-xs  lg:text-sm flex items-center justify-between text-orange-500">
+                <p data-field="date" data-input-type="date-picker">8/2020-present</p>
+                <p data-field="city">palo Atla,CA</p>
               </div>
-            </div>
-          </div>
-          <div class="content px-3 lg:px-6">
-            <h3>Data Scientist</h3>
-            <h4>Future Energy limited</h4>
-            <div class="italic text-xs  lg:text-sm flex items-center justify-between text-orange-500">
-              <p>8/2020-present</p>
-              <p>palo Atla,CA</p>
-            </div>
-            <div class="p-3">
-              <li class="text-orange-500">
-                <div class="text-black content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-                  unde rerum tempora quasi expedita quis itaque, iusto minus quisquam error eius voluptatem aperiam
-                  alias illum eveniet obcaecati vero tenetur asperiores!</div>
-              </li>
-              <li class="text-orange-500">
-                <div class="text-black content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-                  unde rerum tempora quasi expedita quis itaque, iusto minus quisquam error eius voluptatem aperiam
-                  alias illum eveniet obcaecati vero tenetur asperiores!</div>
-              </li>
-
-              <div></div>
-            </div>
-          </div>
-          <div class=" min-h-fit p-4 flex  items-center gap-2  text-gray-700">
-            <div class="iconbg">
-              <i class="fa-solid fa-briefcase"></i>
-
-
-            </div>
-            <h1>EDUCATION</h1>
-
-
-
-          </div>
-          <div class=" p-6">
-            <h3 class=" font-black text-base lg:text-2xl">Master of Science in Computer Science and Informatics</h3>
-            <h4 class="font-medium  text-sm lg:text-xl">San Francisco University</h4>
-            <div class="italic text-xs  lg:text-sm flex items-center justify-between text-orange-500">
-              <p>2020-2023</p>
-
-            </div>
-
-          </div>
+              <div class="p-3">
+                <li class="text-orange-500">
+                  <div class="text-black content" data-field="Achievements"
+                    data-placeholder="Responsibilities/Achivements" data-input-type="multiple-dynamic-items">Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Architecto,
+                    unde rerum tempora quasi expedita quis itaque, iusto minus quisquam error eius voluptatem aperiam
+                    alias illum eveniet obcaecati vero tenetur asperiores!</div>
+                </li>
+                <li class="text-orange-500">
+                  <div class="text-black content" data-field="Achievements"
+                    data-placeholder="Responsibilities/Achivements" data-input-type="multiple-dynamic-items">Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Architecto,
+                    unde rerum tempora quasi expedita quis itaque, iusto minus quisquam error eius voluptatem aperiam
+                    alias illum eveniet obcaecati vero tenetur asperiores!</div>
+                </li>
+                <li class="text-orange-500">
+                  <div class="text-black content" data-field="Achievements"
+                    data-placeholder="Responsibilities/Achivements" data-input-type="multiple-dynamic-items">Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Architecto,
+                    unde rerum tempora quasi expedita quis itaque, iusto minus quisquam error eius voluptatem aperiam
+                    alias illum eveniet obcaecati vero tenetur asperiores!</div>
+                </li>
+                <li class="text-orange-500">
+                  <div class="text-black content" data-field="Achievements"
+                    data-placeholder="Responsibilities/Achivements" data-input-type="multiple-dynamic-items">Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Architecto,
+                    unde rerum tempora quasi expedita quis itaque, iusto minus quisquam error eius voluptatem aperiam
+                    alias illum eveniet obcaecati vero tenetur asperiores!</div>
+                </li>
+                <div></div>
+              </div>
+            </div> </section>
+          <!-- education -->
+          <section data-section="Education">
+            <div class=" min-h-fit p-4 flex  items-center gap-2  text-gray-700">
+              <div class="iconbg">
+                <i class="fa-solid fa-briefcase"></i> </div>
+              <h1 data-role="header">EDUCATION</h1> </div>
+            <div class=" p-6" data-role="content">
+              <h3 class=" font-black text-base lg:text-2xl" data-field="Qualification">Master of Science in Computer
+                Science and Informatics</h3>
+              <h4 class="font-medium  text-sm lg:text-xl" data-field="university">San Francisco University</h4>
+              <div class="italic text-xs  lg:text-sm flex items-center justify-between text-orange-500"
+                data-field="year" data-input-type="year-picker">
+                <p>2020-2023</p> </div> </div>
+          </section>
         </div>
-        <!-- technical skills -->
         <div class=" col-start-6 col-span-2 lg:p-4  bg-gray-100   ">
-
-
-          <div class=" min-h-fit p-2 lg:p-4 flex  items-center gap-2  text-gray-700">
-            <div class="iconbg">
-              <i class="fa-solid fa-briefcase"></i>
-
-
+          <!-- technical skills -->
+          <section data-section="technical_skills">
+            <div class=" min-h-fit p-2 lg:p-4 flex  items-center gap-2  text-gray-700">
+              <div class="iconbg">
+                <i class="fa-solid fa-briefcase"></i></div>
+              <h1 data-role="header" data-feature-ai="true" data-ai-content="technical_skills">TECHNICAL SKILLS</h1>
             </div>
-            <h1>TECHNICAL SKILLS</h1>
-          </div>
-          <!-- content -->
-          <div class=" p-6">
-            <div>
-              <p class=" technical">Database Management</p>
-              <p class="text-xs">Lorem ipsum dolor sit</p>
-            </div>
-            <div class="pt-4">
-              <p class=" technical">Database Management</p>
-              <p class="text-xs">Lorem ipsum dolor sit</p>
-            </div>
-            <div class="pt-4">
-              <p class=" technical">Database Management</p>
-              <p class="text-xs">Lorem ipsum dolor sit</p>
-            </div>
-          </div>
-          <div class=" min-h-fit p-4 flex  items-center gap-2  text-gray-700">
-            <div class="iconbg text-gray-700">
-              <i class="fa-solid fa-head-side-virus"></i>
-            </div>
-            <h1> SKILLS</h1>
+            <div class=" p-6" data-role="content">
+              <div class="p-2">
+                <p class=" technical" data-field="skill_Name">Database Management</p>
+                <p class="text-xs" data-field="aboutSkill" data-role="content">Lorem ipsum dolor sit</p>
+              </div> 
+              <div class="p-2">
+                <p class=" technical" data-field="skill_Name">Database Management</p>
+                <p class="text-xs" data-field="aboutSkill" data-role="content">Lorem ipsum dolor sit</p>
+              </div> </div></section>
+          <!-- skills -->
 
-
-          </div>
-          <!-- skillitem -->
-          <div class="p-4 lg:p-6">
-            <p class="skillitem">Data Visualisation</p>
-            <p class="skillitem">Data Visualisation</p>
-            <p class="skillitem">Data Base Management</p>
-            <p class="skillitem">Data Visualisation</p>
-            <p class="skillitem">Data Visualisation</p>
-          </div>
+          <section data-section="Skills">
+            <div class=" min-h-fit p-4 flex  items-center gap-2  text-gray-700">
+              <div class="iconbg text-gray-700">
+                <i class="fa-solid fa-head-side-virus"></i>
+              </div>
+              <h1 data-role="header"> SKILLS</h1></div>
+            <div class="p-4 lg:ps-6" data-role="content">
+            <p class="skillitem" data-field="name">Data Visualisation</p> </div>
+            <div class="p-4 lg:ps-6" data-role="content">
+              <p class="skillitem" data-field="name">Data Visualisation</p> </div>
+          </section>
           <!-- certificates       -->
+          <section data-section="certificates">
           <div class=" min-h-fit p-4 flex  items-center  gap-2  text-gray-700   ">
             <div class="iconbg text-gray-700">
               <i class="fa-solid fa-certificate"></i>
             </div>
-            <h1>CERTIFICATES</h1>
-
-
-          </div>
-          <!-- content -->
-          <div class="p-6 text-sm ">
+            <h1 data-role="header">CERTIFICATES</h1></div>
+          <div class="p-6 text-sm " data-role="content">
+            <div class="my-2">
+              <p data-field="name" class="content" >Database Management</p>
+              <p data-role="content">Lorem ipsum dolor sit</p>
+            </div>
             <div>
-              <p>Database Management</p>
-              <p class="content">Lorem ipsum dolor sit</p>
-            </div>
-            <div class="pt-4">
-              <p>Database Management</p>
-              <p class="content"> Lorem ipsum dolor sit</p>
-            </div>
-            <div class="pt-4">
-              <p>Database Management</p>
-              <p class="content">Lorem ipsum dolor sit</p>
-            </div>
-          </div>
+              <p data-field="name" class="content">Database Management</p>
+              <p  data-role="content">Lorem ipsum dolor sit</p>
+            </div></div>
+        </section>
 
         </div>
-</div> </div>
-<script src="https://kit.fontawesome.com/4d8456b076.js" crossorigin="anonymous"></script>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/4d8456b076.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
